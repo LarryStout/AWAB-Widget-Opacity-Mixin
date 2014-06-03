@@ -1,0 +1,23 @@
+.jimu-widget-opacity .opacityToggleOn {
+    background-image: url(../images/arrow_up.png);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+}
+.jimu-widget-opacity .opacityToggleOff {
+    background-image: url(../images/arrow_down.png);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+}
+.jimu-widget-opacity .opacityToggleButton .dijitButtonNode {
+    background-color: rgba(0, 0, 0, 0) !important;
+    background-image: none !important;
+    border-style: none !important;
+    box-shadow: none !important;
+}
+.jimu-widget-opacity .unselectable {
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+}

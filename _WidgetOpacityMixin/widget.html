@@ -1,0 +1,24 @@
+<div class="jimu-widget-opacity">
+  <div id="opacityToggleButton{_womParentWidget.id}" class="opacityToggleButton" data-dojo-type="dijit/form/ToggleButton"
+       data-dojo-props="iconClass:'opacityToggleOff',showLabel:false,checked:false,style:'width:24px;height:24px;margin-left:8px;display:none;'" 
+       data-dojo-attach-event="onClick:_womOnClick,onChange:_womToggleSlider">
+  </div>
+  <div id="opacityTooltip{_womParentWidget.id}" data-dojo-type="dijit/Tooltip"
+       data-dojo-props="connectId:'opacityToggleButton{_womParentWidget.id}',label:'{_womNls.showSlider}',showDelay:250,position:['above','below','after-centered','before-centered']">
+  </div>
+  <div id="opacitySliderNode{_womParentWidget.id}" class="unselectable" style="opacity:0;margin-top:10px;">
+    <div id="opacitySlider{_womParentWidget.id}" data-dojo-type="dijit/form/HorizontalSlider"
+         data-dojo-props="maximum:1.0,minimum:0.5,value:{_womInitialSliderValue},discreteValues:11,intermediateChanges:true,showButtons:false"
+         data-dojo-attach-event="click:_womOnClick,change:_womSliderChange">
+      <div id="opacitySliderRule{_womParentWidget.id}" data-dojo-type="dijit/form/HorizontalRule" container="bottomDecoration"
+           count=6 style="height:5px;">
+      </div>
+      <ol id="opacitySliderLabels{_womParentWidget.id}" data-dojo-type="dijit/form/HorizontalRuleLabels" container="bottomDecoration"
+          data-dojo-props="style:'margin-top:-2px'">
+        <li>{_womNls.min}</li>
+        <li>{_womNls.widgetOpacity}</li>
+        <li>{_womNls.max}</li>
+      </ol>
+    </div>
+  </div>
+</div>
